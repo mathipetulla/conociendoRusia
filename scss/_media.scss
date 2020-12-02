@@ -1,0 +1,47 @@
+#mediaLayout {
+    /*GRID LAYOUT1 INDEX*/
+    background: url('../img/bannerMedia.jpg') fixed no-repeat center/cover;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 7vh 30vh auto 15vh;
+    grid-template-areas: "header     header"
+   "banner     banner"
+   "fotos      fotos"
+   "footer     footer"; }
+  
+  /*fotos*/
+  .containerSeccionGaleria {
+    grid-area: fotos;
+    background-color: #1d1d1d;
+    width: 100%;
+    padding: 2rem 0; }
+  
+  .fotos {
+    width: 90%;
+    margin: auto;
+    padding: 1rem 1rem;
+    background-color: #3b3b3b;}
+  
+  .imgPort {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+  
+  .imgGaleria {
+    width: 15%;
+    margin: .5rem .5rem;
+    min-width: 300px;
+    position: relative;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
+  
+  .imgGaleria img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; }
+  
+  .imgGaleria img:hover {
+    transition: all .5s;
+    transform: scale(1.05); }
+  
+ 
