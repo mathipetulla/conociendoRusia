@@ -445,7 +445,7 @@ footer h4 {
   /*INDEX*/
   #indexLayout {
     /*GRID LAYOUT1 INDEX*/
-    background: url("../img/index.jpg") fixed no-repeat top;
+    background: url("../img/indexNuevo.jpg") fixed no-repeat top;
     background-size: cover;
     display: grid;
     grid-template-columns: 100%;
@@ -458,12 +458,12 @@ footer h4 {
  "makin"
  "notas"
  "footer"; }
-  .containerTuEncanto .containerFlex {
+  .container1 .containerFlex {
     height: 100%;
     width: 100%;
     margin: auto;
     padding: 0 0 6rem 0; }
-  .containerMakin .containerFlex {
+  .container2 .containerFlex {
     height: 100%;
     width: 100%;
     margin: auto;
