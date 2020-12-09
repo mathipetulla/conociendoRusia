@@ -1,13 +1,19 @@
 /*INDEX*/
 #indexLayout {
   /*GRID LAYOUT1 INDEX*/
-  background: url("../img/index.jpg") fixed no-repeat top;
+  background: url("../img/indexNuevo.jpg") fixed no-repeat top;
   background-size: cover;
   display: grid;
   width: 100%;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto 80vh 13vh auto auto  auto 15vh;
-  grid-template-areas: "header     header" "banner     banner" "redes      redes " "section    section" "tuEnc      makin" "notas      notas" "footer    footer"; }
+  grid-template-areas: "header     header"
+ "banner     banner"
+ "redes      redes "
+ "section    section"
+ "tuEnc      makin"
+ "notas      notas"
+ "footer    footer"; }
 
 .redes {
   grid-area: redes;
@@ -16,13 +22,6 @@
   .redes a:hover {
     transition: all 0.5s;
     transform: scale(1.2); }
-
-.promo {
-  grid-area: banner;
-  align-self: center;
-  justify-self: center;
-  padding-top: 5rem; }
-
 .iconoBanner {
   width: 22rem;
   opacity: 85%; }
@@ -47,11 +46,11 @@
   text-align: center;
   padding: 1rem 0 0 0; }
 
-.containerTuEncanto {
+.container1 {
   background-color: #1d1d1d;
   grid-area: tuEnc; }
 
-.containerMakin {
+.container2 {
   background-color: #1d1d1d;
   grid-area: makin; }
 
@@ -98,7 +97,9 @@
   background-color: #3b3b3b;
   color: #ffffff;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
-
+.card-img-top{
+  height: 38%;
+}
 #musicaLayout {
   background: url("../img/musicaBanner.jpg") fixed no-repeat top;
   background-size: 100%;
@@ -106,7 +107,13 @@
   width: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 30vh auto auto auto  auto 15vh;
-  grid-template-areas: "header     header" "banner     banner" "sect1      sect1" "senci      senci" "sect2      sect2" "album      album" "footer     footer"; }
+  grid-template-areas: "header     header"
+ "banner     banner"
+ "sect1      sect1"
+ "senci      senci"
+ "sect2      sect2"
+ "album      album"
+ "footer     footer"; }
 
 .tituloLanzamientos {
   background-color: #1d1d1d;
@@ -212,7 +219,11 @@
   width: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 7vh 35vh auto auto 15vh;
-  grid-template-areas: "header     header" "banner     banner" "publi      publi" "tabla      tabla" "footer     footer"; }
+  grid-template-areas: "header     header"
+ "banner     banner"
+ "publi      publi"
+ "tabla      tabla"
+ "footer     footer"; }
 
 .publicidad {
   grid-area: publi;
@@ -262,7 +273,10 @@ table a:hover {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 7vh 30vh auto 15vh;
-  grid-template-areas: "header     header" "banner     banner" "fotos      fotos" "footer     footer"; }
+  grid-template-areas: "header     header"
+ "banner     banner"
+ "fotos      fotos"
+ "footer     footer"; }
 
 /*fotos*/
 .containerSeccionGaleria {
@@ -306,7 +320,10 @@ table a:hover {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto 35vh auto 15vh;
-  grid-template-areas: "header     header" "banner     banner" "fieldset  fieldset" "footer footer"; }
+  grid-template-areas: "header     header"
+ "banner     banner"
+ "fieldset  fieldset"
+ "footer footer"; }
 
 .promoContacto {
   grid-area: banner;
@@ -433,7 +450,14 @@ footer h4 {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto 80vh 13vh auto auto  auto auto 15vh;
-    grid-template-areas: "header" "banner" "redes" "section" "tuEnc" "makin" "notas" "footer"; }
+    grid-template-areas: "header"
+ "banner"
+ "redes"
+ "section"
+ "tuEnc"
+ "makin"
+ "notas"
+ "footer"; }
   .containerTuEncanto .containerFlex {
     height: 100%;
     width: 100%;
@@ -453,7 +477,13 @@ footer h4 {
     height: 100%;
     grid-template-columns: 100%;
     grid-template-rows: auto 35vh auto auto auto  auto 15vh;
-    grid-template-areas: "header" "banner" "sect1" "senci" "sect2" "album" "footer"; }
+    grid-template-areas: "header"
+ "banner"
+ "sect1"
+ "senci"
+ "sect2"
+ "album"
+ "footer"; }
   #albumTapa {
     width: 40rem; }
   .albumList {
