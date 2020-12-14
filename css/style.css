@@ -218,7 +218,7 @@
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 7vh 35vh auto auto 15vh;
+  grid-template-rows: auto 35vh auto auto 15vh;
   grid-template-areas: "header     header"
  "banner     banner"
  "publi      publi"
@@ -272,12 +272,29 @@ table a:hover {
   background: url("../img/bannerMedia.jpg") fixed no-repeat center/cover;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 7vh 30vh auto 15vh;
+  grid-template-rows: auto 30vh auto  auto 15vh;
   grid-template-areas: "header     header"
  "banner     banner"
+ "videos    videos"
  "fotos      fotos"
  "footer     footer"; }
+/*videos*/
+.containerSeccionVideos {
+  grid-area: videos;
+  background-color: #1d1d1d;
+  width: 100%;
+  padding: 2rem 0; }
 
+.videos {
+  width: 90%;
+  margin: auto;
+  padding: 1rem 1rem;
+  background-color: #3b3b3b; }
+
+.vidPort {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
 /*fotos*/
 .containerSeccionGaleria {
   grid-area: fotos;
@@ -436,7 +453,7 @@ footer h4 {
   text-align: center;
   color: white; }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {                  /*MEDIA QUERI*/
   html {
     font-size: 14px; }
   .navbar {
@@ -497,12 +514,18 @@ footer h4 {
     justify-content: center;
     flex-wrap: wrap; }
   .imgSencillo {
-    min-width: 300px;
+    min-width: 150px;
     overflow: hidden;
     position: relative;
     margin: 1rem 1rem;
     cursor: pointer;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
+        .tituloLanzamientos h2 {
+          color: #ffffff;
+          font-size: 2.5rem;
+          font-weight: 500;
+          text-align: start;
+          margin: auto; }
   /*SHOWS*/
   .fotoPublicidad img {
     width: 100%;
