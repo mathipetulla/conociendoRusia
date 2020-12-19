@@ -119,23 +119,25 @@
   background-color: #1d1d1d;
   grid-area: sect1;
   padding: 1rem 0; }
-  .tituloLanzamientos h2 {
-    color: #ffffff;
-    font-size: 3.5rem;
-    font-weight: 500;
-    text-align: start;
-    width: 90%;
-    margin: auto; }
+
+.tituloLanzamientos h2 {
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: start;
+  width: 90%;
+  margin: auto; }
 
 .containerSeccionSencillos {
   grid-area: senci;
   background-color: #1d1d1d;
   width: 100%;
   padding: 1rem 0; }
-  .containerSeccionSencillos .sencillos {
-    width: 90%;
-    margin: auto;
-    background-color: #3b3b3b; }
+
+.containerSeccionSencillos .sencillos {
+  width: 90%;
+  margin: auto;
+  background-color: #3b3b3b; }
 
 .sencillosPort {
   display: flex;
@@ -149,11 +151,12 @@
   position: relative;
   cursor: pointer;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
-  .imgSencillo img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover; }
+
+.imgSencillo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; }
 
 .hoverSencillo {
   position: absolute;
@@ -166,8 +169,9 @@
   display: flex;
   justify-content: center;
   align-items: center; }
-  .hoverSencillo img {
-    width: 3.6rem; }
+
+.hoverSencillo img {
+  width: 3.6rem; }
 
 .iconos:hover {
   transition: all 0.5s;
@@ -180,13 +184,14 @@
   background-color: #1d1d1d;
   grid-area: sect2;
   padding: 1rem 0; }
-  .tituloDiscografia h2 {
-    color: #ffffff;
-    font-size: 3.5rem;
-    font-weight: 500;
-    text-align: start;
-    width: 90%;
-    margin: auto; }
+
+.tituloDiscografia h2 {
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: start;
+  width: 90%;
+  margin: auto; }
 
 .containerSeccionDiscografia {
   background-color: #1d1d1d;
@@ -201,15 +206,18 @@
 .albumList {
   width: 50%;
   margin: 1rem 0; }
-  .albumList ul li {
-    border-bottom: 1px solid gray; }
-  .albumList ul li a {
-    color: white;
-    font-size: 2rem;
-    font-weight: 200; }
-  .albumList ul li a:hover {
-    transition: all 0.4s;
-    color: #3937c4; }
+
+.albumList ul li {
+  border-bottom: 1px solid gray; }
+
+.albumList ul li a {
+  color: white;
+  font-size: 2rem;
+  font-weight: 200; }
+
+.albumList ul li a:hover {
+  transition: all 0.4s;
+  color: #3937c4; }
 
 /*SHOWS*/
 #showsLayout {
@@ -360,7 +368,7 @@ form {
 
 @media only screen and (max-width: 768px) {
   html {
-    font-size: 11px; }
+    font-size: 335px; }
   .navbar {
     background-color: #0f0f0fbd;
     box-shadow: 0 0 1rem 0 black; }
@@ -398,6 +406,8 @@ form {
   .albumList {
     width: 90%;
     margin: 1rem 0; }
+  .sencillos {
+    background-color: #1d1d1d; }
   .containerSeccionSencillos .sencillos {
     width: 90%;
     margin: auto; }

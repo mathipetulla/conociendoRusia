@@ -1,7 +1,7 @@
 
 @media only screen and (max-width: 768px) {
     html {
-      font-size: 11px; }
+      font-size: 10px; }
     .navbar {
       background-color: #0f0f0fbd;
       box-shadow: 0 0 1rem 0 black; }
@@ -52,6 +52,9 @@
     .albumList {
       width: 90%;
       margin: 1rem 0; }
+    .sencillos{
+      background-color: #1d1d1d;
+    }
     .containerSeccionSencillos .sencillos {
       width: 90%;
       margin: auto; }

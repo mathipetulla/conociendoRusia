@@ -1,9 +1,476 @@
-@import "index";
-@import "musica";
-@import "shows";    
-@import "media";
-@import "contacto";
-@import "queri";
+#indexLayout {
+  /*GRID LAYOUT1 INDEX*/
+  background: url("../img/indexNuevo.jpg") fixed no-repeat top;
+  background-size: cover;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto 80vh 13vh auto auto  auto 15vh;
+  grid-template-areas: "header     header"
+ "banner     banner"
+ "redes      redes "
+ "section    section"
+ "tuEnc      makin"
+ "notas      notas"
+ "footer    footer"; }
+.redes {
+  grid-area: redes;
+  align-self: center;
+  justify-self: center; }
+
+.redes a:hover {
+  transition: all 0.5s;
+  transform: scale(1.2); }
+
+.promo {
+  grid-area: banner;
+  align-self: center;
+  justify-self: center;
+  padding-top: 5rem; }
+
+.iconoBanner {
+  width: 22rem;
+  opacity: 85%; }
+
+.titleSection {
+  background-color: #1d1d1d;
+  height: 100%;
+  padding: 3rem 0 3rem 0;
+  grid-area: section;
+  align-self: center; }
+
+.titleSection h5 {
+  color: #ffffff;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: center; }
+
+.titleLanzamientos h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 200;
+  text-align: center;
+  padding: 1rem 0 0 0; }
+
+.container1, .container2 {
+  background-color: #1d1d1d; }
+
+.containerTuEncanto {
+  background-color: #1d1d1d;
+  grid-area: tuEnc; }
+
+.containerMakin {
+  background-color: #1d1d1d;
+  grid-area: makin; }
+
+.containerFlex {
+  height: 100%;
+  width: 95%;
+  margin: 2rem auto 2rem auto; }
+
+.iframeContainer {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0; }
+
+.iframeContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.entrevistas {
+  grid-area: notas;
+  width: 100%;
+  background-color: #1d1d1d;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.tituloEntrevistas {
+  width: 100%;
+  background-color: #1d1d1d;
+  padding: 3rem 0 3rem 0; }
+
+.tituloEntrevistas h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
+
+.card {
+  margin: 0.8rem;
+  width: 20rem;
+  border: none;
+  background-color: #3b3b3b;
+  color: #ffffff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
+
+#musicaLayout {
+  background: url("../img/musicaBanner.jpg") fixed no-repeat top;
+  background-size: 100%;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 30vh auto auto auto  auto 15vh;
+  grid-template-areas: "header     header"
+ "banner     banner"
+ "sect1      sect1"
+ "senci      senci"
+ "sect2      sect2"
+ "album      album"
+ "footer     footer"; }
+
+.tituloLanzamientos {
+  background-color: #1d1d1d;
+  grid-area: sect1;
+  padding: 1rem 0; }
+  .tituloLanzamientos h2 {
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-align: start;
+    width: 90%;
+    margin: auto; }
+
+.containerSeccionSencillos {
+  grid-area: senci;
+  background-color: #1d1d1d;
+  width: 100%;
+  padding: 1rem 0; }
+  .containerSeccionSencillos .sencillos {
+    width: 90%;
+    margin: auto;
+    background-color: #3b3b3b; }
+
+.sencillosPort {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.imgSencillo {
+  width: 15%;
+  margin: 1rem 1rem;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
+  .imgSencillo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; }
+
+.hoverSencillo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transition: transform .5s;
+  transform: scale(0);
+  background-image: linear-gradient(rgba(0, 0, 255, 0.521), rgba(255, 0, 0, 0.404));
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hoverSencillo img {
+    width: 3.6rem; }
+
+.iconos:hover {
+  transition: all 0.5s;
+  transform: scale(1.2); }
+
+.imgSencillo:hover .hoverSencillo {
+  transform: scale(1); }
+
+.tituloDiscografia {
+  background-color: #1d1d1d;
+  grid-area: sect2;
+  padding: 1rem 0; }
+  .tituloDiscografia h2 {
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-align: start;
+    width: 90%;
+    margin: auto; }
+
+.containerSeccionDiscografia {
+  background-color: #1d1d1d;
+  width: 100%;
+  grid-area: album;
+  padding: 1rem 0; }
+
+#albumTapa {
+  width: 22rem;
+  align-self: center; }
+
+.albumList {
+  width: 50%;
+  margin: 1rem 0; }
+  .albumList ul li {
+    border-bottom: 1px solid gray; }
+  .albumList ul li a {
+    color: white;
+    font-size: 2rem;
+    font-weight: 200; }
+  .albumList ul li a:hover {
+    transition: all 0.4s;
+    color: #3937c4; }
+
+/*SHOWS*/
+#showsLayout {
+  /*GRID LAYOUT1 INDEX*/
+  background: url("../img/bannerShows.jpg") fixed no-repeat center/cover;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 35vh auto auto 15vh;
+  grid-template-areas: "header     header"
+ "banner     banner"
+ "publi      publi"
+ "tabla      tabla"
+ "footer     footer"; }
+
+.publicidad {
+  grid-area: publi;
+  padding: 2rem 0;
+  background-color: #1d1d1d; }
+
+.fotoPublicidad {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  object-fit: cover; }
+
+.fotoPublicidad img {
+  width: 50%;
+  object-fit: cover; }
+
+.containerTablaEventos {
+  background-color: #1d1d1d;
+  grid-area: tabla; }
+
+.tablaEventos {
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.tablaEventos table {
+  background-color: #3f3f3f;
+  border: none;
+  border-radius: 0.6rem;
+  width: 70%;
+  text-align: center;
+  font-weight: 400;
+  color: white;
+  font-size: 1.7rem; }
+
+table a {
+  color: #59b966; }
+
+table a:hover {
+  transition: all 0.5s;
+  font-size: 2rem; }
+
+#mediaLayout {
+  /*GRID LAYOUT1 INDEX*/
+  background: url("../img/bannerMedia.jpg") fixed no-repeat center/cover;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 7vh 30vh auto 15vh;
+  grid-template-areas: "header     header"
+ "banner     banner"
+ "fotos      fotos"
+ "footer     footer"; }
+
+/*fotos*/
+.containerSeccionGaleria {
+  grid-area: fotos;
+  background-color: #1d1d1d;
+  width: 100%;
+  padding: 2rem 0; }
+
+.fotos {
+  width: 90%;
+  margin: auto;
+  padding: 1rem 1rem;
+  background-color: #3b3b3b; }
+
+.imgPort {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.imgGaleria {
+  width: 15%;
+  margin: .5rem .5rem;
+  min-width: 300px;
+  position: relative;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
+
+.imgGaleria img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; }
+
+.imgGaleria img:hover {
+  transition: all .5s;
+  transform: scale(1.05); }
+
+/*CONTACTO*/
+#contactoLayout {
+  /*GRID LAYOUT1 INDEX*/
+  background: url("../img/contacto.jpg") fixed no-repeat center/cover;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto 35vh auto 15vh;
+  grid-template-areas: "header     header"
+ "banner     banner"
+ "fieldset  fieldset"
+ "footer footer"; }
+
+.promoContacto {
+  grid-area: banner;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.promoContacto div h2 {
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  font-size: 4rem; }
+
+.formulario {
+  background-color: #1d1d1d;
+  grid-area: fieldset;
+  /*flex*/
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap; }
+
+.about {
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 1.3rem;
+  padding: 2rem;
+  margin: 2rem auto 2rem auto;
+  width: 90%;
+  background-color: #3b3b3b; }
+
+form {
+  background-color: #3b3b3b;
+  border-radius: 1rem;
+  width: 50rem;
+  color: white;
+  padding: 2rem;
+  margin: 2rem 0 4rem 0; }
+
+.form-control {
+  background-color: #dbdbdb;
+  border: none; }
+
+@media only screen and (max-width: 768px) {
+
+  html {
+    font-size: 335px;}
+
+  .navbar {
+    background-color: #0f0f0fbd;
+    box-shadow: 0 0 1rem 0 black; }
+
+  /*INDEX*/
+  #indexLayout {
+    /*GRID LAYOUT1 INDEX*/
+    background: url("../img/indexNuevo.jpg") fixed no-repeat top;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 80vh 13vh auto auto  auto auto 15vh;
+    grid-template-areas: "header"
+ "banner"
+ "redes"
+ "section"
+ "tuEnc"
+ "makin"
+ "notas"
+ "footer"; }
+  .containerTuEncanto .containerFlex {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 0 0 6rem 0; }
+  .containerMakin .containerFlex {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 0 0 6rem 0; }
+  /*MUSICA*/
+  #musicaLayout {
+    /*GRID LAYOUT MUSICA*/
+    background: url("../img/musicaBanner.jpg") fixed no-repeat center/cover;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 35vh auto auto auto  auto 15vh;
+    grid-template-areas: "header"
+ "banner"
+ "sect1"
+ "senci"
+ "sect2"
+ "album"
+ "footer"; }
+  #albumTapa {
+    width: 40rem; }
+  .albumList {
+    width: 90%;
+    margin: 1rem 0; }
+  .sencillos {
+    background-color: #1d1d1d; }
+  .containerSeccionSencillos .sencillos {
+    width: 90%;
+    margin: auto; }
+  .sencillos .sencillosPort {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .imgSencillo {
+    min-width: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: 1rem 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
+  /*SHOWS*/
+  .fotoPublicidad img {
+    width: 100%;
+    object-fit: cover; }
+  .tablaEventos table {
+    background-color: #3f3f3f;
+    border: none;
+    border-radius: 0.6rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    font-size: 1.3rem; }
+  /*media*/
+  .imgGaleria {
+    width: 15%;
+    margin: .5rem .5rem;
+    min-width: 300px;
+    position: relative;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); } }
 
 /*HEADER GENERAL*/
 header {
@@ -42,12 +509,13 @@ ul {
   grid-area: banner;
   align-self: center;
   justify-self: center; }
-  .promoGeneral h2 {
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
-    font-size: 4rem;
-    color: #fafafa; }
+
+.promoGeneral h2 {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 4rem;
+  color: #fafafa; }
 
 /*FOOTER GENERAL*/
 footer {
