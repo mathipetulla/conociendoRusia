@@ -1,4 +1,3 @@
-/*INDEX*/
 #indexLayout {
   /*GRID LAYOUT1 INDEX*/
   background: url("../img/indexNuevo.jpg") fixed no-repeat top;
@@ -7,21 +6,23 @@
   width: 100%;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto 80vh 13vh auto auto  auto 15vh;
-  grid-template-areas: "header     header"
- "banner     banner"
- "redes      redes "
- "section    section"
- "tuEnc      makin"
- "notas      notas"
- "footer    footer"; }
+  grid-template-areas: "header     header" "banner     banner" "redes      redes " "section    section" "tuEnc      makin" "notas      notas" "footer    footer"; }
 
 .redes {
   grid-area: redes;
   align-self: center;
   justify-self: center; }
-  .redes a:hover {
-    transition: all 0.5s;
-    transform: scale(1.2); }
+
+.redes a:hover {
+  transition: all 0.5s;
+  transform: scale(1.2); }
+
+.promo {
+  grid-area: banner;
+  align-self: center;
+  justify-self: center;
+  padding-top: 5rem; }
+
 .iconoBanner {
   width: 22rem;
   opacity: 85%; }
@@ -32,12 +33,13 @@
   padding: 3rem 0 3rem 0;
   grid-area: section;
   align-self: center; }
-  .titleSection h5 {
-    color: #ffffff;
-    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
-    font-size: 3.5rem;
-    font-weight: 500;
-    text-align: center; }
+
+.titleSection h5 {
+  color: #ffffff;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: center; }
 
 .titleLanzamientos h2 {
   color: #ffffff;
@@ -46,11 +48,14 @@
   text-align: center;
   padding: 1rem 0 0 0; }
 
-.container1 {
+.container1, .container2 {
+  background-color: #1d1d1d; }
+
+.containerTuEncanto {
   background-color: #1d1d1d;
   grid-area: tuEnc; }
 
-.container2 {
+.containerMakin {
   background-color: #1d1d1d;
   grid-area: makin; }
 
@@ -60,16 +65,18 @@
   margin: 2rem auto 2rem auto; }
 
 .iframeContainer {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
   height: 0; }
-  .iframeContainer iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
+
+.iframeContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 .entrevistas {
   grid-area: notas;
@@ -83,12 +90,13 @@
   width: 100%;
   background-color: #1d1d1d;
   padding: 3rem 0 3rem 0; }
-  .tituloEntrevistas h2 {
-    font-size: 3.5rem;
-    font-weight: 400;
-    text-align: center;
-    color: #ffffff;
-    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
+
+.tituloEntrevistas h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
 
 .card {
   margin: 0.8rem;
@@ -97,9 +105,7 @@
   background-color: #3b3b3b;
   color: #ffffff;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
-.card-img-top{
-  height: 38%;
-}
+
 #musicaLayout {
   background: url("../img/musicaBanner.jpg") fixed no-repeat top;
   background-size: 100%;
@@ -107,13 +113,7 @@
   width: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 30vh auto auto auto  auto 15vh;
-  grid-template-areas: "header     header"
- "banner     banner"
- "sect1      sect1"
- "senci      senci"
- "sect2      sect2"
- "album      album"
- "footer     footer"; }
+  grid-template-areas: "header     header" "banner     banner" "sect1      sect1" "senci      senci" "sect2      sect2" "album      album" "footer     footer"; }
 
 .tituloLanzamientos {
   background-color: #1d1d1d;
@@ -219,11 +219,7 @@
   width: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 35vh auto auto 15vh;
-  grid-template-areas: "header     header"
- "banner     banner"
- "publi      publi"
- "tabla      tabla"
- "footer     footer"; }
+  grid-template-areas: "header     header" "banner     banner" "publi      publi" "tabla      tabla" "footer     footer"; }
 
 .publicidad {
   grid-area: publi;
@@ -272,29 +268,9 @@ table a:hover {
   background: url("../img/bannerMedia.jpg") fixed no-repeat center/cover;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: auto 30vh auto  auto 15vh;
-  grid-template-areas: "header     header"
- "banner     banner"
- "videos    videos"
- "fotos      fotos"
- "footer     footer"; }
-/*videos*/
-.containerSeccionVideos {
-  grid-area: videos;
-  background-color: #1d1d1d;
-  width: 100%;
-  padding: 2rem 0; }
+  grid-template-rows: 7vh 30vh auto 15vh;
+  grid-template-areas: "header     header" "banner     banner" "fotos      fotos" "footer     footer"; }
 
-.videos {
-  width: 90%;
-  margin: auto;
-  padding: 1rem 1rem;
-  background-color: #3b3b3b; }
-
-.vidPort {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap; }
 /*fotos*/
 .containerSeccionGaleria {
   grid-area: fotos;
@@ -337,10 +313,7 @@ table a:hover {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto 35vh auto 15vh;
-  grid-template-areas: "header     header"
- "banner     banner"
- "fieldset  fieldset"
- "footer footer"; }
+  grid-template-areas: "header     header" "banner     banner" "fieldset  fieldset" "footer footer"; }
 
 .promoContacto {
   grid-area: banner;
@@ -385,6 +358,81 @@ form {
   background-color: #dbdbdb;
   border: none; }
 
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 14px; }
+  .navbar {
+    background-color: #0f0f0fbd;
+    box-shadow: 0 0 1rem 0 black; }
+  /*INDEX*/
+  #indexLayout {
+    /*GRID LAYOUT1 INDEX*/
+    background: url("../img/index.jpg") fixed no-repeat top;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 80vh 13vh auto auto  auto auto 15vh;
+    grid-template-areas: "header" "banner" "redes" "section" "tuEnc" "makin" "notas" "footer"; }
+  .containerTuEncanto .containerFlex {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 0 0 6rem 0; }
+  .containerMakin .containerFlex {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 0 0 6rem 0; }
+  /*MUSICA*/
+  #musicaLayout {
+    /*GRID LAYOUT MUSICA*/
+    background: url("../img/musicaBanner.jpg") fixed no-repeat center/cover;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 35vh auto auto auto  auto 15vh;
+    grid-template-areas: "header" "banner" "sect1" "senci" "sect2" "album" "footer"; }
+  #albumTapa {
+    width: 40rem; }
+  .albumList {
+    width: 90%;
+    margin: 1rem 0; }
+  .containerSeccionSencillos .sencillos {
+    width: 90%;
+    margin: auto; }
+  .sencillos .sencillosPort {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .imgSencillo {
+    min-width: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: 1rem 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
+  /*SHOWS*/
+  .fotoPublicidad img {
+    width: 100%;
+    object-fit: cover; }
+  .tablaEventos table {
+    background-color: #3f3f3f;
+    border: none;
+    border-radius: 0.6rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    font-size: 1.3rem; }
+  /*media*/
+  .imgGaleria {
+    width: 15%;
+    margin: .5rem .5rem;
+    min-width: 300px;
+    position: relative;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); } }
+
 /*HEADER GENERAL*/
 header {
   grid-area: header;
@@ -422,12 +470,13 @@ ul {
   grid-area: banner;
   align-self: center;
   justify-self: center; }
-  .promoGeneral h2 {
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
-    font-size: 4rem;
-    color: #fafafa; }
+
+.promoGeneral h2 {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 4rem;
+  color: #fafafa; }
 
 /*FOOTER GENERAL*/
 footer {
@@ -452,97 +501,3 @@ footer h4 {
   font-weight: 300;
   text-align: center;
   color: white; }
-
-@media only screen and (max-width: 768px) {                  /*MEDIA QUERI*/
-  html {
-    font-size: 14px; }
-  .navbar {
-    background-color: #0f0f0fbd;
-    box-shadow: 0 0 1rem 0 black; }
-  /*INDEX*/
-  #indexLayout {
-    /*GRID LAYOUT1 INDEX*/
-    background: url("../img/indexNuevo.jpg") fixed no-repeat top;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto 80vh 13vh auto auto  auto auto 15vh;
-    grid-template-areas: "header"
- "banner"
- "redes"
- "section"
- "tuEnc"
- "makin"
- "notas"
- "footer"; }
-  .container1 .containerFlex {
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    padding: 0 0 6rem 0; }
-  .container2 .containerFlex {
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    padding: 0 0 6rem 0; }
-  /*MUSICA*/
-  #musicaLayout {
-    /*GRID LAYOUT MUSICA*/
-    background: url("../img/musicaBanner.jpg") fixed no-repeat center/cover;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: auto 35vh auto auto auto  auto 15vh;
-    grid-template-areas: "header"
- "banner"
- "sect1"
- "senci"
- "sect2"
- "album"
- "footer"; }
-  #albumTapa {
-    width: 40rem; }
-  .albumList {
-    width: 90%;
-    margin: 1rem 0; }
-  .containerSeccionSencillos .sencillos {
-    width: 90%;
-    margin: auto; }
-  .sencillos .sencillosPort {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; }
-  .imgSencillo {
-    min-width: 150px;
-    overflow: hidden;
-    position: relative;
-    margin: 1rem 1rem;
-    cursor: pointer;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
-        .tituloLanzamientos h2 {
-          color: #ffffff;
-          font-size: 2.5rem;
-          font-weight: 500;
-          text-align: start;
-          margin: auto; }
-  /*SHOWS*/
-  .fotoPublicidad img {
-    width: 100%;
-    object-fit: cover; }
-  .tablaEventos table {
-    background-color: #3f3f3f;
-    border: none;
-    border-radius: 0.6rem;
-    width: 100%;
-    text-align: center;
-    font-weight: 400;
-    color: white;
-    font-size: 1.3rem; }
-  /*media*/
-  .imgGaleria {
-    width: 15%;
-    margin: .5rem .5rem;
-    min-width: 300px;
-    position: relative;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); } }

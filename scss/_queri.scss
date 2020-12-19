@@ -1,0 +1,89 @@
+
+@media only screen and (max-width: 768px) {
+    html {
+      font-size: 14px; }
+    .navbar {
+      background-color: #0f0f0fbd;
+      box-shadow: 0 0 1rem 0 black; }
+    /*INDEX*/
+    #indexLayout {
+      /*GRID LAYOUT1 INDEX*/
+      background: url("../img/index.jpg") fixed no-repeat top;
+      background-size: cover;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto 80vh 13vh auto auto  auto auto 15vh;
+      grid-template-areas: "header"
+   "banner"
+   "redes"
+   "section"
+   "tuEnc"
+   "makin"
+   "notas"
+   "footer"; }
+    .containerTuEncanto .containerFlex {
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      padding: 0 0 6rem 0; }
+    .containerMakin .containerFlex {
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      padding: 0 0 6rem 0; }
+    /*MUSICA*/
+    #musicaLayout {
+      /*GRID LAYOUT MUSICA*/
+      background: url("../img/musicaBanner.jpg") fixed no-repeat center/cover;
+      display: grid;
+      width: 100%;
+      height: 100%;
+      grid-template-columns: 100%;
+      grid-template-rows: auto 35vh auto auto auto  auto 15vh;
+      grid-template-areas: "header"
+   "banner"
+   "sect1"
+   "senci"
+   "sect2"
+   "album"
+   "footer"; }
+    #albumTapa {
+      width: 40rem; }
+    .albumList {
+      width: 90%;
+      margin: 1rem 0; }
+    .containerSeccionSencillos .sencillos {
+      width: 90%;
+      margin: auto; }
+    .sencillos .sencillosPort {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+    .imgSencillo {
+      min-width: 300px;
+      overflow: hidden;
+      position: relative;
+      margin: 1rem 1rem;
+      cursor: pointer;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
+    /*SHOWS*/
+    .fotoPublicidad img {
+      width: 100%;
+      object-fit: cover; }
+    .tablaEventos table {
+      background-color: #3f3f3f;
+      border: none;
+      border-radius: 0.6rem;
+      width: 100%;
+      text-align: center;
+      font-weight: 400;
+      color: white;
+      font-size: 1.3rem; }
+    /*media*/
+    .imgGaleria {
+      width: 15%;
+      margin: .5rem .5rem;
+      min-width: 300px;
+      position: relative;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); } }
+  
