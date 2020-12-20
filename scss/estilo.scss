@@ -24,7 +24,7 @@
     grid-area: header;
     align-self: center; }
   .navbar-brand h1 {
-    font-size: 2.1rem;
+    font-size: 2.5rem;
     font-weight: 500; }
   .nav-link {
     font-size: 1.7rem;
@@ -40,27 +40,27 @@
     text-align: center;
     font-weight: 500;
     font-size: 4rem;
-    color: #fafafa; }
+    color: #dbdbdb }
   
   /*FOOTER GENERAL*/
   footer {
     grid-area: footer;
     height: 100%;
-    background-color: #202020;
+    background-color:#202020;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
   footer h2 {
     width: 100%;
-    font-size: 1.9rem;
-    font-weight: 400;
+    font-size: 1.4rem;
+    font-weight: 300;
     text-align: center;
     color: white; }
   footer h4 {
     width: 100%;
-    font-size: 1.3rem;
-    font-weight: 300;
+    font-size: 1.2rem;
+    font-weight: 200;
     text-align: center;
     color: white; }
   

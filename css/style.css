@@ -439,6 +439,9 @@ table a:hover {
 @media only screen and (max-width: 768px) {
   html {
     font-size: 12px; }
+  .navbar-brand .brand {
+    font-size: 2rem;
+    font-weight: 500; }
   .navbar {
     background-color: #0f0f0fbd;
     box-shadow: 0 0 1rem 0 black; }
@@ -447,7 +450,7 @@ table a:hover {
     font-size: 2.3rem; }
   #titulosPrincipales h2 {
     width: 90%;
-    font-size: 2.3rem; }
+    font-size: 2.4rem; }
   /*INDEX*/
   #indexLayout {
     /*GRID LAYOUT1 INDEX*/
@@ -460,11 +463,23 @@ table a:hover {
   .containerFlex {
     height: 100%;
     width: 100%; }
+  .titleLanzamientos h2 {
+    color: #202020;
+    font-size: 1.7rem;
+    font-weight: 200;
+    text-align: center;
+    padding: 1rem 0 0 0; }
   .card {
     margin: 1rem;
     width: 80%;
     border: none;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
+  .card-title {
+    font-weight: 400;
+    font-size: 1.2rem; }
+  .card-text {
+    font-weight: 300;
+    font-size: 1.1rem; }
   /*MUSICA*/
   #musicaLayout {
     /*GRID LAYOUT MUSICA*/
@@ -566,7 +581,7 @@ header {
   align-self: center; }
 
 .navbar-brand h1 {
-  font-size: 2.1rem;
+  font-size: 2.5rem;
   font-weight: 500; }
 
 .nav-link {
@@ -584,7 +599,7 @@ header {
   text-align: center;
   font-weight: 500;
   font-size: 4rem;
-  color: #fafafa; }
+  color: #dbdbdb; }
 
 /*FOOTER GENERAL*/
 footer {
@@ -598,14 +613,14 @@ footer {
 
 footer h2 {
   width: 100%;
-  font-size: 1.9rem;
-  font-weight: 400;
+  font-size: 1.4rem;
+  font-weight: 300;
   text-align: center;
   color: white; }
 
 footer h4 {
   width: 100%;
-  font-size: 1.3rem;
-  font-weight: 300;
+  font-size: 1.2rem;
+  font-weight: 200;
   text-align: center;
   color: white; }
