@@ -1,25 +1,574 @@
+/*INDEX*/
+#indexLayout {
+  /*GRID LAYOUT1 INDEX*/
+  background: url("../img/indexNuevo.jpg") fixed no-repeat top;
+  background-size: cover;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto 80vh 13vh auto auto  auto 15vh;
+  grid-template-areas: "header     header" "banner     banner" "redes      redes " "section    section" "tuEnc      makin" "notas      notas" "footer    footer"; }
+
+.redes {
+  grid-area: redes;
+  align-self: center;
+  justify-self: center; }
+
+.redes a:hover {
+  transition: all 0.5s;
+  transform: scale(1.2); }
+
+.promo {
+  grid-area: banner;
+  align-self: center;
+  justify-self: center;
+  padding-top: 5rem; }
+
+.iconoBanner {
+  width: 22rem;
+  opacity: 85%; }
+
+.titleSection {
+  background-color: #dbdbdb;
+  height: 100%;
+  padding: 3rem 0 3rem 0;
+  grid-area: section;
+  align-self: center; }
+
+.titleSection h5 {
+  width: 50%;
+  border-bottom: 1px solid #202020;
+  border-top: 1px solid #202020;
+  margin: auto;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #202020;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.4); }
+
+.titleLanzamientos h2 {
+  color: #202020;
+  font-size: 2rem;
+  font-weight: 200;
+  text-align: center;
+  padding: 1rem 0 0 0; }
+
+.container1, .container2 {
+  background-color: #dbdbdb; }
+
+.containerTuEncanto {
+  background-color: #dbdbdb;
+  grid-area: tuEnc; }
+
+.containerMakin {
+  background-color: #dbdbdb;
+  grid-area: makin; }
+
+.containerFlex {
+  height: 100%;
+  width: 95%;
+  margin: 2rem auto 2rem auto; }
+
+.iframeContainer {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0; }
+
+.iframeContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.entrevistas {
+  grid-area: notas;
+  width: 100%;
+  background-color: #dbdbdb;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.tituloEntrevistas {
+  width: 100%;
+  background-color: #dbdbdb; }
+
+.tituloEntrevistas h2 {
+  width: 50%;
+  border-bottom: 1px solid #202020;
+  border-top: 1px solid #202020;
+  margin: auto;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #202020;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.4); }
+
+.card {
+  margin: 2rem 1rem;
+  width: 20rem;
+  border: none;
+  background-color: #dddddd;
+  color: #202020;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); }
+
+.btn {
+  background-color: #202020;
+  width: 35%;
+  border: none; }
+
+.card-img-top {
+  height: 37%; }
+
+.card-title {
+  font-weight: 400;
+  font-size: 1.5rem; }
+
+.card-text {
+  font-weight: 300;
+  font-size: 1.2rem; }
+
+/*CONTACTO*/
+#contactoLayout {
+  /*GRID LAYOUT1 INDEX*/
+  background: url("../img/contacto.jpg") fixed no-repeat center/cover;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto 30vh auto 15vh;
+  grid-template-areas: "header     header" "banner     banner" "fieldset  fieldset" "footer footer"; }
+
+.promoContacto {
+  grid-area: banner;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.promoContacto div h2 {
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  font-size: 4rem; }
+
+.formulario {
+  background-color: #dbdbdb;
+  grid-area: fieldset;
+  /*flex*/
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap; }
+
+.about {
+  color: #202020;
+  font-weight: 200;
+  font-size: 1.3rem;
+  padding: 2rem;
+  margin: 2rem auto 2rem auto;
+  width: 90%;
+  border: 1px solid #3b3b3b; }
+
+form {
+  background-color: #3b3b3b;
+  width: 50rem;
+  color: white;
+  padding: 2rem;
+  margin: 2rem 0 4rem 0; }
+
+.form-control {
+  background-color: #dbdbdb;
+  border: none; }
+
+/*MUSICA*/
+#musicaLayout {
+  background: url("../img/bannerMusica.jpg") fixed no-repeat top;
+  background-size: 100%;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 30vh auto auto auto  auto 15vh;
+  grid-template-areas: "header     header" "banner     banner" "sect1      sect1" "senci      senci" "sect2      sect2" "album      album" "footer     footer"; }
+
+.tituloLanzamientos {
+  background-color: #dbdbdb;
+  height: 100%;
+  padding: 3rem 0 3rem 0;
+  grid-area: sect1;
+  align-self: center; }
+
+.tituloLanzamientos h2 {
+  width: 50%;
+  border-bottom: 1px solid #202020;
+  border-top: 1px solid #202020;
+  margin: auto;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #202020;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.4); }
+
+.containerSeccionSencillos {
+  grid-area: senci;
+  background-color: #dbdbdb;
+  width: 100%;
+  padding: 1rem 0; }
+
+.containerSeccionSencillos .sencillos {
+  width: 90%;
+  margin: auto;
+  border: 1px solid #3b3b3b; }
+
+.sencillosPort {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.imgSencillo {
+  width: 15%;
+  margin: 1rem 1rem;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
+
+.imgSencillo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; }
+
+.hoverSencillo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transition: transform .5s;
+  transform: scale(0);
+  background-image: linear-gradient(rgba(0, 0, 255, 0.61), rgba(255, 0, 0, 0.568));
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.hoverSencillo img {
+  width: 3.6rem; }
+
+.iconos:hover {
+  transition: all 0.5s;
+  transform: scale(1.2); }
+
+.imgSencillo:hover .hoverSencillo {
+  transform: scale(1); }
+
+.tituloDiscografia {
+  background-color: #dbdbdb;
+  height: 100%;
+  padding: 3rem 0 3rem 0;
+  grid-area: sect2;
+  align-self: center; }
+
+.tituloDiscografia h2 {
+  width: 50%;
+  border-bottom: 1px solid #202020;
+  border-top: 1px solid #202020;
+  margin: auto;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #202020;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.4); }
+
+.containerSeccionDiscografia {
+  background-color: #dbdbdb;
+  width: 100%;
+  grid-area: album;
+  padding: 1rem 0; }
+
+#albumTapa {
+  width: 22rem;
+  align-self: center; }
+
+.albumList {
+  width: 50%;
+  margin: 1rem 0; }
+
+.albumList ul li {
+  border-bottom: 1px solid gray; }
+
+.albumList ul li a {
+  color: #202020;
+  font-size: 2rem;
+  font-weight: 200; }
+
+.albumList ul li a:hover {
+  transition: all 0.4s;
+  text-decoration: none;
+  color: red; }
+
+/*SHOWS*/
+#showsLayout {
+  /*GRID LAYOUT1 INDEX*/
+  background: url("../img/showsBanner.jpg") fixed no-repeat center/cover;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 30vh auto auto  auto 15vh;
+  grid-template-areas: "header     header" "banner     banner" "tabla      tabla" "tour       tour" "tour1      tour2" "footer     footer"; }
+
+.containerShows1 {
+  grid-area: tour1;
+  background-color: #dbdbdb; }
+
+.containerShows2 {
+  background-color: #dbdbdb;
+  grid-area: tour2; }
+
+.tourContainter {
+  grid-area: tour;
+  background-color: #dbdbdb; }
+
+.titleShows h2 {
+  width: 50%;
+  border-bottom: 1px solid #202020;
+  border-top: 1px solid #202020;
+  margin: 2rem auto 2rem auto;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #202020;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.4); }
+
+.tourPort {
+  width: 70%;
+  margin: auto;
+  padding: 2rem 0; }
+
+.containerTablaEventos {
+  background-color: #dbdbdb;
+  grid-area: tabla; }
+
+.tablaEventos {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.tablaEventos table {
+  width: 70%;
+  text-align: center;
+  font-weight: 300;
+  color: #202020;
+  font-size: 1.5rem; }
+
+.tablaEventos table tr {
+  border: 1px solid #202020; }
+
+table a {
+  color: #59b966; }
+
+table a:hover {
+  color: #0173dd;
+  text-decoration: none;
+  transition: all 0.5s;
+  font-size: 1.6  rem; }
+
+/*MEDIA*/
+#mediaLayout {
+  background: url("../img/bannerMedia.jpg") fixed no-repeat center/cover;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto 30vh auto auto 15vh;
+  grid-template-areas: "header     header" "banner     banner" "videos     videos" "fotos      fotos" "footer     footer"; }
+
+.titleMedia h5 {
+  width: 50%;
+  border-bottom: 1px solid #202020;
+  border-top: 1px solid #202020;
+  margin: 2rem auto 2rem auto;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #202020;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.4); }
+
+.containerSeccionVideos {
+  background-color: #dbdbdb;
+  grid-area: videos; }
+
+.carouselVideos {
+  width: 85%;
+  height: 100%;
+  margin: auto; }
+
+/*fotos*/
+.containerSeccionGaleria {
+  grid-area: fotos;
+  background-color: #dbdbdb;
+  width: 100%;
+  padding: 2rem 0; }
+
+.fotos {
+  width: 90%;
+  margin: auto;
+  padding: 1rem 1rem;
+  background-color: #dbdbdb; }
+
+.imgPort {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.imgGaleria {
+  width: 15%;
+  margin: .5rem .5rem;
+  min-width: 300px;
+  position: relative;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
+
+.imgGaleria img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; }
+
+.imgGaleria img:hover {
+  transition: all .5s;
+  transform: scale(1.05); }
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 12px; }
+  .navbar {
+    background-color: #0f0f0fbd;
+    box-shadow: 0 0 1rem 0 black; }
+  #titulosPrincipales h5 {
+    width: 90%;
+    font-size: 2.3rem; }
+  #titulosPrincipales h2 {
+    width: 90%;
+    font-size: 2.3rem; }
+  /*INDEX*/
+  #indexLayout {
+    /*GRID LAYOUT1 INDEX*/
+    background: url("../img/indexNuevo.jpg") fixed no-repeat top;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 80vh 13vh auto auto  auto auto 15vh;
+    grid-template-areas: "header" "banner" "redes" "section" "tuEnc" "makin" "notas" "footer"; }
+  .containerFlex {
+    height: 100%;
+    width: 100%; }
+  .card {
+    margin: 1rem;
+    width: 80%;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
+  /*MUSICA*/
+  #musicaLayout {
+    /*GRID LAYOUT MUSICA*/
+    background: url("../img/bannerMusica.jpg") fixed no-repeat center/cover;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 30vh auto auto auto  auto 15vh;
+    grid-template-areas: "header" "banner" "sect1" "senci" "sect2" "album" "footer"; }
+  .tituloLanzamientos h2, .tituloDiscografia h2 {
+    text-align: center;
+    font-size: 2.5rem; }
+  #albumTapa {
+    width: 40rem; }
+  .albumList ul li a {
+    color: #202020;
+    font-size: 1.5rem;
+    font-weight: 200; }
+  .albumList {
+    width: 90%;
+    margin: 1rem 0; }
+  .containerSeccionSencillos .sencillos {
+    width: 100%;
+    margin: auto; }
+  .sencillos .sencillosPort {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .imgSencillo {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 1rem 1rem;
+    cursor: pointer;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
+  /*SHOWS*/
+  #showsLayout {
+    /*GRID LAYOUT1 INDEX*/
+    background: url("../img/showsBanner.jpg") fixed no-repeat center/cover;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 30vh auto auto auto  auto 15vh;
+    grid-template-areas: "header" "banner" "tabla" "tour" "tour1" "tour2" "footer"; }
+  .tablaEventos table {
+    width: 90%;
+    text-align: center;
+    font-weight: 300;
+    color: #202020;
+    font-size: 1.5rem; }
+  .tourPort {
+    width: 100%;
+    margin: auto;
+    padding: 2rem 0; }
+  /*media*/
+  .carouselVideos {
+    width: 100%; }
+  .fotos {
+    width: 100%;
+    margin: auto;
+    padding: 1rem 1rem; }
+  .imgPort {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .imgGaleria {
+    min-width: 320px; }
+  /*contacto*/
+  form {
+    background-color: #3b3b3b;
+    width: 90%;
+    color: white;
+    padding: 2rem;
+    margin: 2rem 0 4rem 0; } }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Oswald', sans-serif; }
+
 html {
   font-size: 16px; }
+
 .iconos {
   width: 3rem;
   margin: 0.2rem 0.5rem 0 0.5rem; }
+
 a {
   text-decoration: none; }
-ul {  
+
+ul {
   list-style: none; }
 
 /*HEADER GENERAL*/
 header {
   grid-area: header;
   align-self: center; }
+
 .navbar-brand h1 {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   font-weight: 500; }
+
 .nav-link {
   font-size: 1.7rem;
   font-weight: 300; }
@@ -29,6 +578,7 @@ header {
   grid-area: banner;
   align-self: center;
   justify-self: center; }
+
 .promoGeneral h2 {
   width: 100%;
   text-align: center;
@@ -45,502 +595,17 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
 footer h2 {
   width: 100%;
   font-size: 1.9rem;
   font-weight: 400;
   text-align: center;
   color: white; }
+
 footer h4 {
   width: 100%;
   font-size: 1.3rem;
   font-weight: 300;
   text-align: center;
   color: white; }
-
-/*INDEX*/
-#indexLayout {                                                        
-  /*GRID LAYOUT1 INDEX*/
-  background: url("../img/indexNuevo.jpg") fixed no-repeat top;
-  background-size: cover;
-  display: grid;
-  width: 100%;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto 80vh 13vh auto auto  auto 15vh;
-  grid-template-areas:  "header     header"
-                        "banner     banner"
-                        "redes      redes "
-                        "section    section"
-                        "tuEnc      makin"
-                        "notas      notas"
-                        "footer    footer"; }
-.redes {
-  grid-area: redes;
-  align-self: center;
-  justify-self: center; }
-.redes a:hover {
-  transition: all 0.5s;
-  transform: scale(1.2); }
-.promo {
-  grid-area: banner;
-  align-self: center;
-  justify-self: center;
-  padding-top: 5rem; }
-.iconoBanner {
-  width: 22rem;
-  opacity: 85%; }
-.titleSection {
-  background-color: #dbdbdb;
-  height: 100%;
-  padding: 3rem 0 3rem 0;
-  grid-area: section;
-  align-self: center; }
-.titleSection h5 {
-  width: 50%;
-  border-bottom: 1px solid #202020;
-  border-top: 1px solid #202020;
-  margin: auto;
-  font-size: 3.5rem;
-  font-weight: 400;
-  text-align: center;
-  color: #202020;
-  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);  }
-.titleLanzamientos h2 {
-  color: #202020;
-  font-size: 2rem;
-  font-weight: 200;
-  text-align: center;
-  padding: 1rem 0 0 0; }
-.container1, .container2 {
-  background-color: #dbdbdb; }
-.containerTuEncanto {
-  background-color: #dbdbdb;
-  grid-area: tuEnc; }
-.containerMakin {
-  background-color: #dbdbdb;
-  grid-area: makin; }
-.containerFlex {
-  height: 100%;
-  width: 95%;
-  margin: 2rem auto 2rem auto; }
-.iframeContainer {
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  height: 0; }
-.iframeContainer iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-.entrevistas {
-  grid-area: notas;
-  width: 100%;
-  background-color: #dbdbdb;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
-.tituloEntrevistas {
-  width: 100%;
-  background-color: #dbdbdb;}
-.tituloEntrevistas h2 {
-  width: 50%;
-  border-bottom: 1px solid #202020;
-  border-top: 1px solid #202020;
-  margin: auto;
-  font-size: 3.5rem;
-  font-weight: 400;
-  text-align: center;
-  color: #202020;
-  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.4); }
-.card {
-  margin: 2rem 1rem;
-  width: 20rem;
-  border: none;
-  background-color: #dddddd;
-  color: #202020;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); }
-  .btn{
-    background-color:#202020;
-    width: 35%;
-    border: none;
-  }
-  .card-img-top{
-    height: 37%;
-  }
-  .card-title{
-    font-weight: 400;
-    font-size: 1.5rem;
-  }
-.card-text{
-  font-weight: 300;
-  font-size: 1.2rem;
-}
-/*MUSICA*/
-#musicaLayout {                                  
-  background: url("../img/musicaBanner.jpg") fixed no-repeat top;
-  background-size: 100%;
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 30vh auto auto auto  auto 15vh;
-  grid-template-areas:  "header     header"
-                        "banner     banner"
-                        "sect1      sect1"
-                        "senci      senci"
-                        "sect2      sect2"
-                        "album      album"
-                        "footer     footer"; }
-.tituloLanzamientos {
-  background-color: #dbdbdb;
-  height: 100%;
-  padding: 3rem 0 3rem 0;
-  grid-area: sect1;
-  align-self: center;}
-.tituloLanzamientos h2 {
-  width: 50%;
-  border-bottom: 1px solid #202020;
-  border-top: 1px solid #202020;
-  margin: auto;
-  font-size: 3.5rem;
-  font-weight: 400;
-  text-align: center;
-  color: #202020;
-  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.4); }
-.containerSeccionSencillos {
-  grid-area: senci;
-  background-color: #dbdbdb;
-  width: 100%;
-  padding: 1rem 0; }
-.containerSeccionSencillos .sencillos {
-  width: 90%;
-  margin: auto;
-  border: 1px solid #3b3b3b; }
-.sencillosPort {
-  
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap; }
-.imgSencillo {
-  width: 15%;
-  margin: 1rem 1rem;
-  overflow: hidden;
-  position: relative;
-  cursor: pointer;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
-.imgSencillo img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover; }
-.hoverSencillo {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  transition: transform .5s;
-  transform: scale(0);
-  background-image: linear-gradient(rgba(0, 0, 255, 0.61), rgba(255, 0, 0, 0.568));
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-.hoverSencillo img {
-  width: 3.6rem; }
-.iconos:hover {
-  transition: all 0.5s;
-  transform: scale(1.2); }
-.imgSencillo:hover .hoverSencillo {
-  transform: scale(1); }
-.tituloDiscografia {
-  background-color: #dbdbdb;
-  height: 100%;
-  padding: 3rem 0 3rem 0;
-  grid-area: sect2;
-  align-self: center }
-.tituloDiscografia h2 {
-  width: 50%;
-  border-bottom: 1px solid #202020;
-  border-top: 1px solid #202020;
-  margin: auto;
-  font-size: 3.5rem;
-  font-weight: 400;
-  text-align: center;
-  color: #202020;
-  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.4); }
-.containerSeccionDiscografia {
-  background-color: #dbdbdb;
-  width: 100%;
-  grid-area: album;
-  padding: 1rem 0; }
-#albumTapa {
-  width: 22rem;
-  align-self: center; }
-.albumList {
-  width: 50%;
-  margin: 1rem 0; }
-.albumList ul li {
-  border-bottom: 1px solid gray; }
-.albumList ul li a {
-  color: #202020;
-  font-size: 2rem;
-  font-weight: 200; }
-.albumList ul li a:hover {
-  transition: all 0.4s;
-  text-decoration: none;
-  color:red; }
-
-/*SHOWS*/
-#showsLayout {
-  /*GRID LAYOUT1 INDEX*/
-  background: url("../img/bannerShows.jpg") fixed no-repeat center/cover;
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 30vh auto auto  auto 15vh;
-  grid-template-areas:  "header     header"
-                        "banner     banner"
-                        "tabla      tabla"
-                        "tour       tour"
-                        "tour1      tour2"
-                        "footer     footer"; }
-.containerShows1{
-  grid-area: tour1;
-  background-color: #dbdbdb;
-}                  
-.containerShows2{
-  background-color: #dbdbdb;
-  grid-area: tour2;
-}    
-.tourContainter{
-  grid-area: tour;
-  background-color: #dbdbdb;}    
-.titleShows h2{
-  width: 50%;
-  border-bottom: 1px solid #202020;
-  border-top: 1px solid #202020;
-  margin: 2rem auto 2rem auto;
-  font-size: 3.5rem;
-  font-weight: 400;
-  text-align: center;
-  color: #202020;
-  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);}      
-.tourPort{
-  width: 70%;
-  margin: auto;
-  padding: 2rem 0;} 
-.containerTablaEventos {
-  background-color: #dbdbdb;
-  grid-area: tabla; }
-.tablaEventos {
-  margin: 2rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-.tablaEventos table {
-  width: 70%;
-  text-align: center;
-  font-weight: 300;
-  color: #202020;
-  font-size: 1.5rem;
- }
- .tablaEventos table tr{
-  border: 1px solid #202020;
- }
-table a {
-  color: #59b966; }
-table a:hover {
-  color: rgb(1, 115, 221);
-  text-decoration: none;
-  transition: all 0.5s;
-  font-size: 1.6  rem; }
-
-/*MEDIA*/
-#mediaLayout {                                           
-  background: url("../img/bannerMedia.jpg") fixed no-repeat center/cover;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto 30vh auto 15vh;
-  grid-template-areas: "header     header"
- "banner     banner"
- "fotos      fotos"
- "footer     footer"; }
-/*fotos*/
-.containerSeccionGaleria {
-  grid-area: fotos;
-  background-color: #dbdbdb;
-  width: 100%;
-  padding: 2rem 0; }
-.fotos {
-  width: 90%;
-  margin: auto;
-  padding: 1rem 1rem;
-  background-color: #dbdbdb; }
-.imgPort {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap; }
-.imgGaleria {
-  width: 15%;
-  margin: .5rem .5rem;
-  min-width: 300px;
-  position: relative;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
-.imgGaleria img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover; }
-.imgGaleria img:hover {
-  transition: all .5s;
-  transform: scale(1.05); }
-
-/*CONTACTO*/
-#contactoLayout {
-  /*GRID LAYOUT1 INDEX*/
-  background: url("../img/contacto.jpg") fixed no-repeat center/cover;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: auto 30vh auto 15vh;
-  grid-template-areas: "header     header"
- "banner     banner"
- "fieldset  fieldset"
- "footer footer"; }
-.promoContacto {
-  grid-area: banner;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-.promoContacto div h2 {
-  color: white;
-  text-align: center;
-  font-weight: 500;
-  font-size: 4rem; }
-.formulario {
-  background-color: #dbdbdb;
-  grid-area: fieldset;
-  /*flex*/
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row wrap; }
-.about {
-  color: #ffffff;
-  font-weight: 200;
-  font-size: 1.3rem;
-  padding: 2rem;
-  margin: 2rem auto 2rem auto;
-  width: 90%;
-  background-color: #3b3b3b; }
-form {
-  background-color: #3b3b3b;
-  width: 50rem;
-  color: white;
-  padding: 2rem;
-  margin: 2rem 0 4rem 0; }
-.form-control {
-  background-color: #dbdbdb;
-  border: none; }
-
-@media only screen and (max-width: 768px) {
-  html{
-    font-size: 14px;}
-  .navbar {
-    background-color: #0f0f0fbd;
-    box-shadow: 0 0 1rem 0 black; }
-  /*INDEX*/
-  #indexLayout {
-    /*GRID LAYOUT1 INDEX*/
-    background: url("../img/indexNuevo.jpg") fixed no-repeat top;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto 80vh 13vh auto auto  auto auto 15vh;
-    grid-template-areas: "header"
- "banner"
- "redes"
- "section"
- "tuEnc"
- "makin"
- "notas"
- "footer"; }
- .containerFlex {
-  height: 100%;
-  width: 90%;}
-  .card {
-    margin: 0.8rem;
-    width: 90%;
-    border: none;
-    background-color: #3b3b3b;
-    color: #ffffff;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
-  /*MUSICA*/
-  #musicaLayout {
-    /*GRID LAYOUT MUSICA*/
-    background: url("../img/musicaBanner.jpg") fixed no-repeat center/cover;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 100%;
-    grid-template-rows: auto 30vh auto auto auto  auto 15vh;
-    grid-template-areas: "header"
-                          "banner"
-                          "sect1"
-                          "senci"
-                          "sect2"
-                          "album"
-                          "footer"; }
- .tituloLanzamientos h2, .tituloDiscografia h2 {
-   text-align: center;
-  font-size: 2.5rem;}
-  #albumTapa {
-    width: 40rem; }
-  .albumList {
-    width: 90%;
-    margin: 1rem 0; }
-  .containerSeccionSencillos .sencillos {
-    background-color: #1d1d1d ;
-    width: 100%;
-    margin: auto; }
-  .sencillos .sencillosPort {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; }
-  .imgSencillo {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    margin: 1rem 1rem;
-    cursor: pointer;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
-  /*SHOWS*/
-  .tablaEventos table {
-    background-color: #3f3f3f;
-    border: none;
-    border-radius: 0.6rem;
-    width: 100%;
-    text-align: center;
-    font-weight: 400;
-    color: white;
-    font-size: 1.3rem; }
-  /*media*/
-  .fotos {
-    width: 100%;
-    margin: auto;
-    padding: 1rem 1rem;
-    background-color: #1d1d1d; }
-    .imgPort {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap; }
-    .imgGaleria {
-      min-width: 320px; } 
-/*contacto*/      
-form {
-  background-color: #3b3b3b;
-  width: 90%;
-  color: white;
-  padding: 2rem;
-  margin: 2rem 0 4rem 0; }  }

@@ -1,0 +1,116 @@
+/*INDEX*/
+#indexLayout {                                                        
+    /*GRID LAYOUT1 INDEX*/
+    background: url("../img/indexNuevo.jpg") fixed no-repeat top;
+    background-size: cover;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 80vh 13vh auto auto  auto 15vh;
+    grid-template-areas:  "header     header"
+                          "banner     banner"
+                          "redes      redes "
+                          "section    section"
+                          "tuEnc      makin"
+                          "notas      notas"
+                          "footer    footer"; }
+.redes {
+    grid-area: redes;
+    align-self: center;
+    justify-self: center; }
+.redes a:hover {
+    transition: all 0.5s;
+    transform: scale(1.2); }
+.promo {
+    grid-area: banner;
+    align-self: center;
+    justify-self: center;
+    padding-top: 5rem; }
+.iconoBanner {
+    width: 22rem;
+    opacity: 85%; }
+.titleSection {
+    background-color: #dbdbdb;
+    height: 100%;
+    padding: 3rem 0 3rem 0;
+    grid-area: section;
+    align-self: center; }
+.titleSection h5 {
+    width: 50%;
+    border-bottom: 1px solid #202020;
+    border-top: 1px solid #202020;
+    margin: auto;
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: #202020;
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);  }
+.titleLanzamientos h2 {
+    color: #202020;
+    font-size: 2rem;
+    font-weight: 200;
+    text-align: center;
+    padding: 1rem 0 0 0; }
+.container1, .container2 {
+    background-color: #dbdbdb; }
+.containerTuEncanto {
+    background-color: #dbdbdb;
+    grid-area: tuEnc; }
+.containerMakin {
+    background-color: #dbdbdb;
+    grid-area: makin; }
+.containerFlex {
+    height: 100%;
+    width: 95%;
+    margin: 2rem auto 2rem auto; }
+.iframeContainer {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0; }
+.iframeContainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+.entrevistas {
+    grid-area: notas;
+    width: 100%;
+    background-color: #dbdbdb;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+.tituloEntrevistas {
+    width: 100%;
+    background-color: #dbdbdb;}
+.tituloEntrevistas h2 {
+    width: 50%;
+    border-bottom: 1px solid #202020;
+    border-top: 1px solid #202020;
+    margin: auto;
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: #202020;
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.4); }
+.card {
+    margin: 2rem 1rem;
+    width: 20rem;
+    border: none;
+    background-color: #dddddd;
+    color: #202020;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); }
+.btn{
+      background-color:#202020;
+      width: 35%;
+      border: none;}
+.card-img-top{
+      height: 37%;}
+.card-title{
+      font-weight: 400;
+      font-size: 1.5rem;}
+.card-text{
+    font-weight: 300;
+    font-size: 1.2rem;}

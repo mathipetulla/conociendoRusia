@@ -1,0 +1,65 @@
+/*SHOWS*/
+#showsLayout {
+    /*GRID LAYOUT1 INDEX*/
+    background: url("../img/showsBanner.jpg") fixed no-repeat center/cover;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 30vh auto auto  auto 15vh;
+    grid-template-areas:  "header     header"
+                          "banner     banner"
+                          "tabla      tabla"
+                          "tour       tour"
+                          "tour1      tour2"
+                          "footer     footer"; }
+  .containerShows1{
+    grid-area: tour1;
+    background-color: #dbdbdb;
+  }                  
+  .containerShows2{
+    background-color: #dbdbdb;
+    grid-area: tour2;
+  }    
+  .tourContainter{
+    grid-area: tour;
+    background-color: #dbdbdb;}    
+  .titleShows h2{
+    width: 50%;
+    border-bottom: 1px solid #202020;
+    border-top: 1px solid #202020;
+    margin: 2rem auto 2rem auto;
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: #202020;
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);}      
+  .tourPort{
+    width: 70%;
+    margin: auto;
+    padding: 2rem 0;} 
+  .containerTablaEventos {
+    background-color: #dbdbdb;
+    grid-area: tabla; }
+  .tablaEventos {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .tablaEventos table {
+    width: 70%;
+    text-align: center;
+    font-weight: 300;
+    color: #202020;
+    font-size: 1.5rem;
+   }
+   .tablaEventos table tr{
+    border: 1px solid #202020;
+   }
+  table a {
+    color: #59b966; }
+  table a:hover {
+    color: rgb(1, 115, 221);
+    text-decoration: none;
+    transition: all 0.5s;
+    font-size: 1.6  rem; }
+  
