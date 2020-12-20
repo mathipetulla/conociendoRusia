@@ -90,30 +90,34 @@ footer h4 {
   width: 22rem;
   opacity: 85%; }
 .titleSection {
-  background-color: #1d1d1d;
+  background-color: #dbdbdb;
   height: 100%;
   padding: 3rem 0 3rem 0;
   grid-area: section;
   align-self: center; }
 .titleSection h5 {
-  color: #ffffff;
-  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  width: 50%;
+  border-bottom: 1px solid #202020;
+  border-top: 1px solid #202020;
+  margin: auto;
   font-size: 3.5rem;
-  font-weight: 500;
-  text-align: center; }
+  font-weight: 400;
+  text-align: center;
+  color: #202020;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);  }
 .titleLanzamientos h2 {
-  color: #ffffff;
+  color: #202020;
   font-size: 2rem;
   font-weight: 200;
   text-align: center;
   padding: 1rem 0 0 0; }
 .container1, .container2 {
-  background-color: #1d1d1d; }
+  background-color: #dbdbdb; }
 .containerTuEncanto {
-  background-color: #1d1d1d;
+  background-color: #dbdbdb;
   grid-area: tuEnc; }
 .containerMakin {
-  background-color: #1d1d1d;
+  background-color: #dbdbdb;
   grid-area: makin; }
 .containerFlex {
   height: 100%;
@@ -134,28 +138,46 @@ footer h4 {
 .entrevistas {
   grid-area: notas;
   width: 100%;
-  background-color: #1d1d1d;
+  background-color: #dbdbdb;
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
 .tituloEntrevistas {
   width: 100%;
-  background-color: #1d1d1d;
-  padding: 3rem 0 3rem 0; }
+  background-color: #dbdbdb;}
 .tituloEntrevistas h2 {
+  width: 50%;
+  border-bottom: 1px solid #202020;
+  border-top: 1px solid #202020;
+  margin: auto;
   font-size: 3.5rem;
   font-weight: 400;
   text-align: center;
-  color: #ffffff;
-  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
+  color: #202020;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.4); }
 .card {
-  margin: 0.8rem;
+  margin: 2rem 1rem;
   width: 20rem;
   border: none;
-  background-color: #3b3b3b;
-  color: #ffffff;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6); }
-
+  background-color: #dddddd;
+  color: #202020;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); }
+  .btn{
+    background-color:#202020;
+    width: 35%;
+    border: none;
+  }
+  .card-img-top{
+    height: 37%;
+  }
+  .card-title{
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+.card-text{
+  font-weight: 300;
+  font-size: 1.2rem;
+}
 /*MUSICA*/
 #musicaLayout {                                  
   background: url("../img/musicaBanner.jpg") fixed no-repeat top;
@@ -172,26 +194,32 @@ footer h4 {
                         "album      album"
                         "footer     footer"; }
 .tituloLanzamientos {
-  background-color: #1d1d1d;
+  background-color: #dbdbdb;
+  height: 100%;
+  padding: 3rem 0 3rem 0;
   grid-area: sect1;
-  padding: 1rem 0; }
+  align-self: center;}
 .tituloLanzamientos h2 {
-  color: #ffffff;
+  width: 50%;
+  border-bottom: 1px solid #202020;
+  border-top: 1px solid #202020;
+  margin: auto;
   font-size: 3.5rem;
-  font-weight: 500;
-  text-align: start;
-  width: 90%;
-  margin: auto; }
+  font-weight: 400;
+  text-align: center;
+  color: #202020;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.4); }
 .containerSeccionSencillos {
   grid-area: senci;
-  background-color: #1d1d1d;
+  background-color: #dbdbdb;
   width: 100%;
   padding: 1rem 0; }
 .containerSeccionSencillos .sencillos {
   width: 90%;
   margin: auto;
-  background-color: #3b3b3b; }
+  border: 1px solid #3b3b3b; }
 .sencillosPort {
+  
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap; }
@@ -214,7 +242,7 @@ footer h4 {
   top: 0;
   transition: transform .5s;
   transform: scale(0);
-  background-image: linear-gradient(rgba(0, 0, 255, 0.521), rgba(255, 0, 0, 0.404));
+  background-image: linear-gradient(rgba(0, 0, 255, 0.61), rgba(255, 0, 0, 0.568));
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -226,18 +254,23 @@ footer h4 {
 .imgSencillo:hover .hoverSencillo {
   transform: scale(1); }
 .tituloDiscografia {
-  background-color: #1d1d1d;
+  background-color: #dbdbdb;
+  height: 100%;
+  padding: 3rem 0 3rem 0;
   grid-area: sect2;
-  padding: 1rem 0; }
+  align-self: center }
 .tituloDiscografia h2 {
-  color: #ffffff;
+  width: 50%;
+  border-bottom: 1px solid #202020;
+  border-top: 1px solid #202020;
+  margin: auto;
   font-size: 3.5rem;
-  font-weight: 500;
-  text-align: start;
-  width: 90%;
-  margin: auto; }
+  font-weight: 400;
+  text-align: center;
+  color: #202020;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.4); }
 .containerSeccionDiscografia {
-  background-color: #1d1d1d;
+  background-color: #dbdbdb;
   width: 100%;
   grid-area: album;
   padding: 1rem 0; }
@@ -250,7 +283,7 @@ footer h4 {
 .albumList ul li {
   border-bottom: 1px solid gray; }
 .albumList ul li a {
-  color: white;
+  color: #202020;
   font-size: 2rem;
   font-weight: 200; }
 .albumList ul li a:hover {
@@ -265,47 +298,63 @@ footer h4 {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 35vh auto auto 15vh;
+  grid-template-rows: auto 30vh auto auto  auto 15vh;
   grid-template-areas:  "header     header"
                         "banner     banner"
                         "tabla      tabla"
                         "tour       tour"
+                        "tour1      tour2"
                         "footer     footer"; }
+.containerShows1{
+  grid-area: tour1;
+  background-color: #dbdbdb;
+}                  
+.containerShows2{
+  background-color: #dbdbdb;
+  grid-area: tour2;
+}    
 .tourContainter{
   grid-area: tour;
-  background-color: #1d1d1d;}    
+  background-color: #dbdbdb;}    
 .titleShows h2{
-  color: #fff;
-  text-align: center;
-  font-weight: 400;
-  font-size:  2.4rem;
-  margin: 2rem 0 0 0;}      
-.tourPort{
   width: 50%;
+  border-bottom: 1px solid #202020;
+  border-top: 1px solid #202020;
+  margin: 2rem auto 2rem auto;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: #202020;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);}      
+.tourPort{
+  width: 70%;
   margin: auto;
-  padding: 2rem 0;}              
+  padding: 2rem 0;} 
 .containerTablaEventos {
-  background-color: #1d1d1d;
+  background-color: #dbdbdb;
   grid-area: tabla; }
 .tablaEventos {
-  padding: 2rem 0;
+  margin: 2rem 0;
   display: flex;
   align-items: center;
   justify-content: center; }
 .tablaEventos table {
-  background-color: #3f3f3f;
-  border: none;
-  border-radius: 0.6rem;
   width: 70%;
   text-align: center;
-  font-weight: 400;
-  color: white;
-  font-size: 1.7rem; }
+  font-weight: 300;
+  color: #202020;
+  font-size: 1.5rem;
+ }
+ .tablaEventos table tr{
+  border: 1px solid #202020;
+ }
 table a {
   color: #59b966; }
 table a:hover {
+  color: rgb(1, 115, 221);
+  text-decoration: none;
   transition: all 0.5s;
-  font-size: 2rem; }
+  font-size: 1.6  rem; }
 
 /*MEDIA*/
 #mediaLayout {                                           
@@ -320,14 +369,14 @@ table a:hover {
 /*fotos*/
 .containerSeccionGaleria {
   grid-area: fotos;
-  background-color: #1d1d1d;
+  background-color: #dbdbdb;
   width: 100%;
   padding: 2rem 0; }
 .fotos {
   width: 90%;
   margin: auto;
   padding: 1rem 1rem;
-  background-color: #3b3b3b; }
+  background-color: #dbdbdb; }
 .imgPort {
   display: flex;
   justify-content: space-evenly;
@@ -353,7 +402,7 @@ table a:hover {
   background: url("../img/contacto.jpg") fixed no-repeat center/cover;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: auto 35vh auto 15vh;
+  grid-template-rows: auto 30vh auto 15vh;
   grid-template-areas: "header     header"
  "banner     banner"
  "fieldset  fieldset"
@@ -369,7 +418,7 @@ table a:hover {
   font-weight: 500;
   font-size: 4rem; }
 .formulario {
-  background-color: #1d1d1d;
+  background-color: #dbdbdb;
   grid-area: fieldset;
   /*flex*/
   width: 100%;
