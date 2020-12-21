@@ -18,7 +18,6 @@
     text-decoration: none; }
   ul {  
     list-style: none; }
-  
   /*HEADER GENERAL*/
   header {
     grid-area: header;
@@ -29,7 +28,6 @@
   .nav-link {
     font-size: 1.7rem;
     font-weight: 300; }
-  
   /*BANNER DE SECCIONES - MENOS EL INDEX*/
   .promoGeneral {
     grid-area: banner;
@@ -41,7 +39,6 @@
     font-weight: 500;
     font-size: 4rem;
     color: #dbdbdb }
-  
   /*FOOTER GENERAL*/
   footer {
     grid-area: footer;
@@ -53,8 +50,8 @@
     align-items: center; }
   footer h2 {
     width: 100%;
-    font-size: 1.4rem;
-    font-weight: 300;
+    font-size: 2rem;
+    font-weight: 500;
     text-align: center;
     color: white; }
   footer h4 {
